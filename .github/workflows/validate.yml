@@ -19,3 +19,6 @@ jobs:
         uses: hacs/action@main
         with:
           category: plugin
+          # Repo metadata, not the plugin files. A custom-repository install does not run these.
+          # License is read from the default branch, so it stays empty until LICENSE is on main.
+          ignore: description topics license
